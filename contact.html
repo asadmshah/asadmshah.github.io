@@ -1,0 +1,12 @@
+---
+layout: default
+title: Contact
+---
+
+<h3>Contact</h3>
+
+{% for contact in site.data.contact %}
+<div class="list-item">
+    <a href="{{ contact.url }}">{{ contact.name }}</a>
+</div>
+{% endfor %}

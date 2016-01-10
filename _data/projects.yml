@@ -1,0 +1,44 @@
+- name: "Moviegur"
+  link: "https://play.google.com/store/apps/details?id=com.asadmshah.moviegur"
+  desc: "An open source application using the TMDB API"
+  lang: "Android"
+
+- name: "RxNearbyMessages"
+  link: "https://github.com/asadmshah/RxNearbyMessages"
+  desc: "Wraps the Nearby Messages API using RxJava observables"
+  lang: "Android"
+
+- name: "Confab"
+  link: "https://github.com/asadmshah/Confab"
+  desc: "A helper library for using the Nearby Connections API"
+  lang: "Android"
+
+- name: "Simple Note Taker"
+  link: "https://github.com/asadmshah/SimpleNoteTaker"
+  desc: "Android Application using MVP and TDD"
+  lang: "Android"
+
+- name: "Material List Items"
+  link: "https://github.com/asadmshah/materiallistitem"
+  desc: "Custom views which follow the MD guidelines on list items"
+  lang: "Android"
+
+- name: "Simple Pedometer"
+  link: "https://github.com/asadmshah/simplepedometer"
+  desc: "Tracks your activity during the course of a run session. My first application"
+  lang: "Android"
+
+- name: "xxHash"
+  link: "https://github.com/asadmshah/xxhash"
+  desc: "An implementation of the xxhash function"
+  lang: "Go"
+
+- name: "Murmur3"
+  link: "https://github.com/asadmshah/murmur3"
+  desc: "An implementation of the murmur3 hash function"
+  lang: "Go"
+
+- name: "Bloom Filter"
+  link: "https://github.com/asadmshah/bloomfilter"
+  desc: "A space-efficient probabilistic data structure used to test whether an element is a member of a set"
+  lang: "Go"

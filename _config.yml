@@ -1,0 +1,15 @@
+title:   'asadmshah'
+
+markdown: kramdown
+
+url: 'http://asadmshah.github.io/'
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+exclude:
+- README.md
+
+safe: true
+lsi: false
