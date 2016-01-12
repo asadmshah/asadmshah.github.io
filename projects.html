@@ -5,8 +5,15 @@ title: Projects
 
 {% for project in site.data.projects %}
 <div class="list-item">
-    <a href="{{ project.link }}">{{ project.name }}</a>
-    <small><p>{{ project.desc }}</p></small>
-    <small><p>{{ project.lang }}</p></small>
+    <p>{{ project.name }}</p>
+    <small>
+        <p>{{ project.desc }}</p>
+        <p>{{ project.lang }}</p>
+        {% for source in project.sources %}
+        <span>
+            <a href="{{ source.link }}">{{ source.name }}</a>
+        </span>
+        {% endfor %}
+    </small>
     </div>
 {% endfor %}
