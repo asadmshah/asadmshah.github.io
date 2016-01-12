@@ -187,24 +187,33 @@ table {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 
- .masthead-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: $masthead-color;
-  
-    a {
-      color: $masthead-color;
-    }
-    
-    small {
-      color: $masthead-small-color;
-      font-size: 75%;
-      font-weight: 400;
-      letter-spacing: 0;
-    }
+  .masthead-nav-start {
+      display: inline;
+      float: left;
+
+      a {
+          color: $masthead-color;
+          font-size: 1.25em;
+      }
+  }
+
+  .masthead-nav-end {
+      display: inline;
+      float: right;
+
+      a {
+          color: $masthead-color;
+          margin-left: 1em;
+      }
   }
 }
 
+//////////////////////////
+// Content
+
+.content {
+    margin-top: 2em;
+}
 
 //////////////////////////
 // Posts

@@ -3,7 +3,6 @@ layout: default
 title: Posts
 ---
 
-{% if site.posts.size > 0 %}
 {% for post in site.posts %}
 <div class="list-item">
     <a href="{{ post.url }}">{{ post.title }}</a>
@@ -11,7 +10,4 @@ title: Posts
     <small><p>{{ post.date | date_to_long_string }}</p></small>
 </div>
 {% endfor %}
-{% else %}
-<span>.</span>
-{% endif %}
 
