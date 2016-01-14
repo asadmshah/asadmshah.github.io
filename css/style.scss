@@ -172,7 +172,7 @@ table {
 //   -- centers page content
 
 .container {
-  max-width: 38rem;
+  max-width: $max-width;
   padding-left:  0rem;
   padding-right: 0rem;
   margin-left:  auto;
@@ -186,40 +186,31 @@ table {
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+  color: $masthead-color;
+  font-size: 0.85em;
 
-  .masthead-nav-start {
+  .masthead-start {
+      margin-left: 1em;
       display: inline;
       float: left;
-
-      a {
-          color: $masthead-color;
-          font-size: 1.25em;
-      }
   }
 
-  .masthead-nav-end {
+  .masthead-end {
       display: inline;
       float: right;
-
-      a {
-          color: $masthead-color;
-          margin-left: 1em;
-      }
+      margin-right: 1em;
   }
 }
 
-//////////////////////////
-// Content
-
-.content {
-    margin-top: 2em;
+.masthead a {
+    margin-left: 1em;
 }
 
 //////////////////////////
 // Posts
 
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 
   // note: only change margin for title,date if inside post block
   .post-title {
@@ -249,4 +240,5 @@ table {
 
 .list-item p {
   margin: 0px;
+  display: inline-block;
 }
