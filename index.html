@@ -4,12 +4,26 @@ title: Posts
 ---
 
 {% for post in site.posts %}
-<div class="list-item">
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <br />
-    <small><p>{{ post.summary }}</p></small>
-    <br />
-    <small><p>{{ post.date | date_to_long_string }}</p></small>
-</div>
-{% endfor %}
+{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
+{% if forloop.first %}
+<div class="list-container">
+	<h2>{{ this_year }}</h2>
+	<ul class="a-list">
+{% endif %}
+	<li><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">{{ post.title }}</a></li>
+
+{% if forloop.last %}
+	</ul>
+</div>
+{% else %}
+{% if this_year != next_year %}
+	</ul>
+</div>
+<div class="list-container">
+	<h2>{{ next_year }}</h2>
+	<ul class="a-list">
+{% endif %}
+{% endif %}
+{% endfor %}

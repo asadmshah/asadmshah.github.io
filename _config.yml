@@ -1,15 +1,34 @@
-title:   'asadmshah'
+name: Asad Shah
+description: 
+meta_description: ""
 
-markdown: kramdown
+markdown: redcarpet
+highlighter: pygments
 
-url: 'http://asadmshah.github.io/'
+baseurl: /
+domain_name: 'http://asadmshah.xyz'
+google_analytics: 'UA-44789032-1'
 
-sass:
-  sass_dir: css
-  style:    expanded
+url:    "asadmshah.xyz"
+author: "Asad Shah"
 
-exclude:
-- README.md
+permalink: /:year/:title/
 
-safe: true
-lsi: false
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      layout: post
