@@ -3,7 +3,7 @@ description:
 meta_description: ""
 
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 
 baseurl: /
 domain_name: 'http://asadmshah.xyz'
