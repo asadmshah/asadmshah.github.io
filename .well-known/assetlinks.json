@@ -1,0 +1,12 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.asadmshah",
+    "sha256_cert_fingerprints":
+    [
+    	"53:71:E4:26:7E:6E:FE:CF:E2:08:A9:14:80:74:B1:A9:7C:0A:61:69:D3:57:18:9D:1E:FC:DB:5A:3D:2F:39:7D",
+    	"DD:A4:B3:6B:E1:DD:61:63:9E:2B:5C:07:6D:CB:7B:3A:BC:F2:78:98:46:CD:8B:AF:86:69:F2:29:71:DA:43:A4"
+    ]
+  }
+}]
